@@ -106,6 +106,16 @@ docs/screenshots/           전/후 캡처
 |---|---|---|---|
 | ![before](docs/screenshots/before_starter.png) | ![answer](docs/screenshots/after_3_answer.png) | ![typing](docs/screenshots/after_2_typing.png) | ![error](docs/screenshots/after_4_error.png) |
 
+### 실기기 확인 — iPhone Safari
+
+<img src="docs/screenshots/device_iphone_keyboard.png" alt="iPhone에서 키보드가 올라온 화면" width="300">
+
+같은 Wi-Fi의 iPhone Safari에서 웹 빌드(`flutter build web --release --dart-define=MOCK=true`)를 열어 확인했다.
+
+- 키보드가 올라와도 입력창이 키보드 바로 위에 보인다
+- 첫 한글 입력부터 □ 없이 보인다 (Noto Sans KR 번들)
+- 다크 모드를 따라간다 · 보낸 말풍선(오른쪽)과 답 말풍선(왼쪽)이 구분된다
+
 ## 확인
 
 ```bash
@@ -117,7 +127,7 @@ flutter analyze && flutter test
 - [x] 메시지를 보내면 점 3개가 움직인다
 - [x] 답이 부드럽게 삽입된다 (250ms)
 - [x] 오류에서 재시도가 동작한다
-- [x] 키보드가 입력창을 가리지 않는다 (`resizeToAvoidBottomInset` · `SafeArea` · Android `adjustResize`)
+- [x] 키보드가 입력창을 가리지 않는다 (`resizeToAvoidBottomInset` · `SafeArea` · Android `adjustResize`) — iPhone 실기기 확인
 - [x] Reduce Motion에서 즉시 표시된다
 - [x] 커밋 2 · PR 1 — [PR #7](https://github.com/xide-projext/yonsei_gai3008_w11_lab1_chat_ui/pull/7)
 - [ ] 1분 구술 녹음 ← 직접
